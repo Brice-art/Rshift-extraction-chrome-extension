@@ -6,7 +6,7 @@
   "permissions": ["identity", "scripting", "activeTab", "storage"],
   "host_permissions": ["https://www.googleapis.com/"],
   "oauth2": {
-    "client_id": "1037313255528-9r0k67d8004qvlvgto6p7rh040iun72d.apps.googleusercontent.com",
+    "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
     "scopes": ["https://www.googleapis.com/auth/calendar.events"]
   },
   "background": {
