@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Shift to Google Calendar",
+  "version": "1.0",
+  "description": "Extract shifts and export them to Google Calendar.",
+  "permissions": ["identity", "scripting", "activeTab", "storage"],
+  "host_permissions": ["https://www.googleapis.com/"],
+  "oauth2": {
+    "client_id": "1037313255528-9r0k67d8004qvlvgto6p7rh040iun72d.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/calendar.events"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,39 @@
+<svg width="16" height="16" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5e7eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <circle cx="64" cy="64" r="60" fill="url(#bgGradient)" stroke="#1e1b4b" stroke-width="2"/>
+  
+  <!-- Shift/Arrow symbol -->
+  <g transform="translate(64, 64)">
+    <!-- Up arrow pointing right (representing shift/export) -->
+    <path d="M -20 -8 L 8 -8 L 8 -16 L 24 0 L 8 16 L 8 8 L -20 8 Z" 
+          fill="url(#arrowGradient)" 
+          stroke="#1e1b4b" 
+          stroke-width="1"/>
+    
+    <!-- Export lines/document representation -->
+    <g transform="translate(-32, -20)">
+      <rect x="0" y="0" width="16" height="2" fill="#ffffff" opacity="0.8" rx="1"/>
+      <rect x="0" y="6" width="12" height="2" fill="#ffffff" opacity="0.6" rx="1"/>
+      <rect x="0" y="12" width="14" height="2" fill="#ffffff" opacity="0.8" rx="1"/>
+      <rect x="0" y="18" width="10" height="2" fill="#ffffff" opacity="0.6" rx="1"/>
+      <rect x="0" y="24" width="16" height="2" fill="#ffffff" opacity="0.8" rx="1"/>
+      <rect x="0" y="30" width="8" height="2" fill="#ffffff" opacity="0.6" rx="1"/>
+      <rect x="0" y="36" width="12" height="2" fill="#ffffff" opacity="0.8" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Subtle highlight -->
+  <circle cx="64" cy="64" r="60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+</svg>
